@@ -1,0 +1,12 @@
+build/
+install/
+log/
+
+*.bag
+*.db3
+*.mcap
+*.csv
+
+.vscode/
+.idea/
+__pycache__/

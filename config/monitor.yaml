@@ -1,0 +1,36 @@
+device_driver_node:
+  ros__parameters:
+    publish_rate_hz: 10.0
+    battery_nominal_voltage: 24.0
+    battery_drop_rate_v_per_s: 0.01
+    motor_initial_temperature: 35.0
+    motor_rise_rate_c_per_s: 0.08
+    joint_motion_amplitude: 1.0
+    inject_faults: false
+    fault_start_sec: 15.0
+    low_fault_voltage: 20.0
+    high_fault_temperature: 78.0
+    joint_fault_amplitude: 2.0
+    drop_imu_after_sec: -1.0
+    device_offline_after_sec: -1.0
+
+communication_manager_node:
+  ros__parameters:
+    timeout_sec: 0.6
+    min_frequency_hz: 5.0
+    report_period_sec: 1.0
+
+diagnostic_monitor_node:
+  ros__parameters:
+    battery_warn_voltage: 22.0
+    battery_error_voltage: 20.5
+    motor_warn_temperature: 65.0
+    motor_error_temperature: 80.0
+    joint_position_limit_rad: 1.57
+    stale_data_timeout_sec: 1.5
+    diagnostic_period_sec: 1.0
+
+logger_node:
+  ros__parameters:
+    log_path: "/tmp/robot_system_monitor/robot_state_log.csv"
+    log_period_sec: 0.2
