@@ -96,7 +96,7 @@ ros2 launch robot_system_monitor monitor.launch.py \
 ## 可视化与数据记录
 
 ```bash
-rqt_plot /robot/battery_voltage/data /robot/motor_temperature/data
+ros2 run rqt_plot rqt_plot /robot/battery_voltage/data /robot/motor_temperature/data
 ros2 bag record /robot/battery_voltage /robot/motor_temperature /robot/joint_states /robot/imu /robot/system_state
 ```
 

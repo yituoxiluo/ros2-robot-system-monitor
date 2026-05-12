@@ -70,6 +70,6 @@ ros2 bag record /robot/battery_voltage /robot/motor_temperature /robot/joint_sta
 
 11. Plot data with rqt_plot
 ---------------------------
-rqt_plot /robot/battery_voltage/data /robot/motor_temperature/data
+ros2 run rqt_plot rqt_plot /robot/battery_voltage/data /robot/motor_temperature/data
 
 EOF
